@@ -1,0 +1,21 @@
+.webcamCapture {
+    position:relative;
+  }
+  
+  .circleButton {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    border-radius: 50%;
+    background-color: #fefc01; /* Set the background color */
+    color: #ffffff; /* Set the text color */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em; /* Set the desired font size */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change on hover */
+}
+
+
+  

@@ -1,0 +1,79 @@
+.preview {
+    position: relative;
+}
+
+.preview_close {
+    position: absolute;
+    top: 0;
+    margin: 20px;
+    margin-left: 3px;
+    color: rgb(248, 252, 246);
+    font-size: 1.7em;
+    font-weight:500;
+    opacity: 0.9;
+    transition: opacity 0.3s ease; 
+    border: none !important; 
+    background-color: transparent;
+}
+body {
+    background-color: none;
+}
+
+.preview_close::before {
+    /* Unicode for the multiplication symbol (×) */
+    font-weight:bolder;
+}
+.preview__toolbarRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -160px;
+    z-index: 10; /* Ensure the toolbar has a higher z-index than the main camera */
+}
+.preview__toolbarRight span {
+    margin: 20px 0; /* Adjust the vertical spacing between emojis */
+    margin-right: -195px;
+    margin-bottom: -30px;
+    background-color: transparent;
+    border: none !important; /* Remove any border */
+    padding: 1 !important; /* Remove any padding */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    color: rgb(248, 252, 246); 
+}
+
+.preview_toolbarRight > .MuiSvgIcon-root {
+    font-size: 20px !important;
+    margin-bottom: 30px;
+    cursor:all-scroll;
+}
+
+button.btn.btn-primary.preview_footer {
+    background-color: rgb(246, 255, 0);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    transform: translate(-50%, -50%);
+}
+
+.preview_footer > p {
+    font-size: 13px !important;
+    margin-right: 6px;
+    font-weight:bolder;
+    font-style: normal;
+    margin-bottom: -2px;
+}
+
+
+.preview_sendIcon {
+    font-size: 10px !important;
+    
+}
+
